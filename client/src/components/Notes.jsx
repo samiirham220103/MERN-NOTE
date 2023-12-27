@@ -37,11 +37,9 @@ function Notes() {
         <p>{error}</p>
       ) : (
         <ul className="notes">
-
           <li className="add-note-button">
             <Link to={`/add-note`}>+</Link>
           </li>
-
 
           {data.map((item) => (
             <li key={item._id}>
